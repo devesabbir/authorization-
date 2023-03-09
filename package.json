@@ -1,0 +1,27 @@
+{
+  "name": "ecommerce-2023",
+  "version": "1.0.0",
+  "description": "this is ecommerce api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "yarn --cwd ./client run start",
+    "dev": "concurrently -k \"yarn run server\" \"yarn run client\""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-formidable": "^1.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.9.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20",
+    "slugify": "^1.6.5"
+  }
+}
